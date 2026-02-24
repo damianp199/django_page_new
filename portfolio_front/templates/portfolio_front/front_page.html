@@ -1,18 +1,29 @@
 {% extends "portfolio_front/portfolio_base.html" %}
 {% block content %}
     {% load static %}
-    <header class="text-center text-white d-flex masthead" style="background-image: url('static/portfolio_front/media/header.jpg');text-shadow: 0px 0px 20px;filter: blur(0px) brightness(77%);box-shadow: 0px 0px;backdrop-filter: blur(0px) brightness(200%);-webkit-backdrop-filter: blur(0px) brightness(200%);border-style: none;border-color: rgb(18,18,18);transition: background-color 2s ease-in-out;">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h3 class="display-4 text-uppercase pulse animated" style="border-style:none;"><strong data-aos="fade" data-aos-duration="1500" data-aos-delay="1000" data-aos-once="true" style="filter:blur(0px) brightness(200%) contrast(200%) grayscale(100%) hue-rotate(0deg) invert(0%) saturate(107%) sepia(0%);color:rgb(255, 255, 255);text-shadow:0px 0px 16px rgb(0,0,0), 0px 0px;font-size:103px;font-family:'Open Sans';">ERP Systems</strong></h3>
-                </div>
-            </div>
-            <div class="col-lg-8 mx-auto">
-                <p class="mb-5 text-faded" data-aos="fade" data-aos-duration="1400" data-aos-delay="1500" data-aos-once="true" style="text-shadow:0px 0px 20px rgba(0,0,0,0.7);color:rgb(255,255,255);font-size:30px;font-family:'Open Sans';">are a shift in how companies think about their processes</p><a class="btn btn-primary btn-xl" role="button" data-aos="fade" data-aos-duration="1400" data-aos-delay="2000" data-aos-once="true" href="#services" style="font-size:20px;background:var(--bs-primary);">Find Out More</a>
+<header class="text-center text-white d-flex masthead" style="position: relative; overflow: hidden; height: 100vh;">
+    <video autoplay muted loop playsinline preload="auto" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="{% static 'portfolio_front/media/3883528131-preview.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container my-auto">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h3 class="display-4 text-uppercase pulse animated" style="border-style:none;">
+                    <strong data-aos="fade" data-aos-duration="1500" data-aos-delay="1000" data-aos-once="true" style="filter:blur(0px) brightness(200%) contrast(200%) grayscale(100%) hue-rotate(0deg) invert(0%) saturate(107%) sepia(0%);color:rgb(255, 255, 255);text-shadow:0px 0px 16px rgb(0,0,0), 0px 0px;font-size:103px;font-family:'Open Sans';">
+                        ERP Systems
+                    </strong>
+                </h3>
             </div>
         </div>
-    </header>
+        <div class="col-lg-8 mx-auto">
+            <p class="mb-5 text-faded" data-aos="fade" data-aos-duration="1400" data-aos-delay="1500" data-aos-once="true" style="text-shadow:0px 0px 20px rgba(0,0,0,0.7);color:rgb(255,255,255);font-size:30px;font-family:'Open Sans';">
+                are a shift in how companies think about their processes
+            </p>
+            <a class="btn btn-primary btn-xl" role="button" data-aos="fade" data-aos-duration="1400" data-aos-delay="2000" data-aos-once="true" href="#services" style="font-size:20px;background:var(--bs-primary);">Find Out More</a>
+        </div>
+    </div>
+</header>
    <section id="services" style="margin-top:0px;filter:hue-rotate(0deg);padding:110px 0px;">
         <div class="container">
             <div class="row" style="margin-top:0px;">
