@@ -1,0 +1,219 @@
+/* Sekcja Services - gradient background */
+
+#services {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+#services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(0, 123, 255, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(28, 107, 173, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#services > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ulepszone karty usług */
+
+.service-box {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-box:hover {
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 123, 255, 0.2);
+}
+
+.service-box svg, .service-box i {
+  transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
+  color: #007bff;
+}
+
+.service-box:hover svg, .service-box:hover i {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+.service-box h1 {
+  color: #1c6bad;
+  font-weight: 700;
+  margin-bottom: 15px;
+  transition: color 0.4s ease-in-out;
+}
+
+.service-box:hover h1 {
+  color: #007bff;
+}
+
+.service-box p {
+  color: #666;
+  line-height: 1.8;
+  transition: color 0.4s ease-in-out;
+}
+
+.service-box:hover p {
+  color: #333;
+}
+
+/* Sekcja heading */
+
+.section-heading {
+  color: #1c6bad;
+  font-weight: 800;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+/* HR styling */
+
+#services .my-4 {
+  border-color: #007bff;
+  opacity: 0.3;
+}
+
+/* Container spacing */
+
+#services .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Benefits section - nowa sekcja poniżej */
+
+.benefits-section {
+  margin: 80px 0;
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.benefit-item:hover {
+  background: rgba(0, 123, 255, 0.05);
+  padding-left: 30px;
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 20px;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.benefit-text h4 {
+  color: #1c6bad;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.benefit-text p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Image section styling */
+
+#services img {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease-in-out;
+}
+
+#services img:hover {
+  transform: scale(1.02);
+}
+
+/* CTA Button styling */
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Stats section - jeśli będziemy chcieć dodać liczby */
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 60px 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+}
+
