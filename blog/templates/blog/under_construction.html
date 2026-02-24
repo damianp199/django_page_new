@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Under_construction</title>
+    <link rel="stylesheet" href="{% static 'blog/a/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+</head>
+
+<body>
+    <div class="construction-container">
+        <div class="background-animation">
+            <div class="particle" style="--delay:0s;--duration:8s;"></div>
+            <div class="particle" style="--delay:2s;--duration:10s;"></div>
+            <div class="particle" style="--delay:4s;--duration:12s;"></div>
+            <div class="particle" style="--delay:1s;--duration:9s;"></div>
+            <div class="particle" style="--delay:3s;--duration:11s;"></div>
+        </div>
+        <div class="content-wrapper">
+            <div class="logo-animation">
+                <div class="gear gear-1"><span>⚙️</span></div>
+                <div class="gear gear-2"><span>⚙️</span></div>
+                <div class="building-icon"><span>🏗️</span></div>
+            </div>
+            <h1 class="main-title"><span class="word">Page</span><span class="word">in</span><span class="word">Construction</span></h1>
+<!--            <p class="subtitle"><span class="dot-animation">Something</span><span class="dot-animation" style="&#45;&#45;delay:0.2s;">amazing</span><span class="dot-animation" style="&#45;&#45;delay:0.4s;">is</span><span class="dot-animation" style="&#45;&#45;delay:0.6s;">coming</span><span class="dot-animation" style="&#45;&#45;delay:0.8s;">soon</span></p>-->
+            <div class="progress-container">
+                <div class="progress-bar-animated"></div>
+                <p class="progress-text">This page is on its way...</p>
+            </div>
+            <div class="floating-elements">
+                <div class="float-item item-1"><span>💡</span></div>
+                <div class="float-item item-2"><span>🔧</span></div>
+                <div class="float-item item-3"><span>✨</span></div>
+                <div class="float-item item-4"><span>🚀</span></div>
+            </div>
+            <div class="contact-section">
+                <a href="{% url 'portfolio-home' %}" class="contact-btn">Return back to main page</a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'blog/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'blog/js/animation.js' %}"></script>
+</body>
+
+</html>

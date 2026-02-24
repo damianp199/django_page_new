@@ -162,7 +162,7 @@
 
 #services img {
   border-radius: 12px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+/*  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); */
   transition: transform 0.4s ease-in-out;
 }
 
