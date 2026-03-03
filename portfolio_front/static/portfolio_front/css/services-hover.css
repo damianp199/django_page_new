@@ -1,0 +1,54 @@
+.service-box h3, .service-box p {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.service-box {
+  position: relative;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transform: scale(1);
+  z-index: 10;
+  min-height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Kontener kart - zapobiegaj wzrostowi wysokości */
+
+.row .col-lg-4, .row .col-md-6 {
+  overflow: visible;
+}
+
+/* Domyślnie tekst je ukryty */
+
+.service-box h3 {
+  opacity: 1;
+}
+
+.service-box p {
+  opacity: 0;
+  height: 80px;
+  overflow: hidden;
+  margin: 0 !important;
+  min-height: 80px;
+  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+/* Przy hover tekst się pojawia i karta się powiększa */
+
+.service-box:hover {
+  transform: scale(1.22);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-box:hover h3 {
+  opacity: 1;
+}
+
+.service-box:hover p {
+  opacity: 1;
+  height: auto;
+  min-height: 80px;
+  margin-bottom: 0 !important;
+}
+
