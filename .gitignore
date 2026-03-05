@@ -8,3 +8,4 @@ db.sqlite3
 */migrations/*
 portfolio_front/static/portfolio_front/pdf
 portfolio_front/static/portfolio_front/media
+staticfiles/
