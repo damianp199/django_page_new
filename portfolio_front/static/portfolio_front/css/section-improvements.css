@@ -1,3 +1,19 @@
+/*Zoom-out  - unikniecie skalowania backgroundu*/
+
+.container.my-auto,
+.container.text-center{
+  
+  zoom: 0.9;
+
+}
+
+#services,
+#contact{
+
+zoom: 0.9;
+}
+
+
 /* Sekcja Services - gradient background */
 
 #services {
@@ -62,7 +78,7 @@
 }
 
 .service-box p {
-  color: #666;
+  color: #659;
   line-height: 1.8;
   transition: color 0.4s ease-in-out;
 }
@@ -153,7 +169,7 @@
 }
 
 .benefit-text p {
-  color: #666;
+  color: #659;
   margin: 0;
   font-size: 14px;
 }
@@ -187,7 +203,7 @@
   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
 }
 
-/* Stats section - jeśli będziemy chcieć dodać liczby */
+/* Stats section - jeśli trzeba bedzie dodac liczby */
 
 .stats-container {
   display: grid;
@@ -213,7 +229,15 @@
 
 .stat-label {
   font-size: 16px;
-  color: #666;
+  color: #659;
   font-weight: 500;
 }
 
+/*center?*/
+
+.center-benefits{
+
+  display:flex;
+  justiry-content:center;
+
+}

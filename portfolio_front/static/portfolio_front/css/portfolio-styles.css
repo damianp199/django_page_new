@@ -20,6 +20,7 @@
 }
 
 body {
+  zoom: 0.9;
   background: linear-gradient(135deg, #f8fafc 0%, #f0f4f9 50%, #f8fafc 100%);
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
